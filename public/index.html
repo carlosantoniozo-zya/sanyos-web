@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>SANYOS — Transportes S.O.N.</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #fafaf8;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #0f0e0c;
+      padding: 12px 32px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    header a {
+      color: #c9a84c;
+      font-family: 'Arial', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border: 1px solid #c9a84c;
+      padding: 6px 16px;
+      transition: background 0.2s;
+    }
+
+    header a:hover { background: #c9a84c; color: #0f0e0c; }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 32px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #c9a84c;
+      margin: 0 auto 28px;
+    }
+
+    h1 {
+      font-size: 13px;
+      font-family: 'Arial', sans-serif;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .tagline {
+      font-size: 28px;
+      font-weight: normal;
+      color: #0f0e0c;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+    }
+
+    .sub {
+      font-size: 14px;
+      font-family: 'Arial', sans-serif;
+      color: #888;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+
+    .services {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 52px;
+    }
+
+    .service {
+      background: #fff;
+      border: 1px solid #e8e4dc;
+      padding: 20px 28px;
+      min-width: 180px;
+    }
+
+    .service-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .service h3 {
+      font-size: 12px;
+      font-family: 'Arial', sans-serif;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .service p {
+      font-size: 12px;
+      color: #999;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .contact {
+      margin-top: 8px;
+    }
+
+    .contact a {
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      color: #c9a84c;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .contact a:hover { border-color: #c9a84c; }
+
+    .entities {
+      margin-top: 20px;
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      color: #bbb;
+      letter-spacing: 0.08em;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #0f0e0c;
+      color: #555;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 480px) {
+      .tagline { font-size: 22px; }
+      .services { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="https://ops.sanyos.mx" target="_blank">ACCESO OPERADORES</a>
+  </header>
+
+  <main>
+    <img src="/logo.png" alt="SANYOS Logo" class="logo" />
+
+    <h1>Transportes S.O.N.</h1>
+    <div class="divider"></div>
+
+    <p class="tagline">Transporte de carga confiable</p>
+    <p class="sub">Distribución local · Regional · Larga distancia</p>
+
+    <div class="services">
+      <div class="service">
+        <div class="service-icon">🚛</div>
+        <h3>Carga general</h3>
+        <p>Distribución regional y local</p>
+      </div>
+      <div class="service">
+        <div class="service-icon">🛣️</div>
+        <h3>Larga distancia</h3>
+        <p>Chihuahua · Sonora · Nuevo León</p>
+      </div>
+      <div class="service">
+        <div class="service-icon">📦</div>
+        <h3>Clientes industriales</h3>
+        <p>Pharma · Agro · Alimentos</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <a href="mailto:contacto@sanyos.mx">contacto@sanyos.mx</a>
+    </div>
+
+    <div class="entities">
+      SANTIAGO OROPEZA NAVA &nbsp;·&nbsp; TRANS LOGISTIC SANYOS SA DE CV
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 TRANSPORTES S.O.N. — TODOS LOS DERECHOS RESERVADOS
+  </footer>
+
+</body>
+</html>
