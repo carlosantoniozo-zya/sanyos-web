@@ -1,3 +1,7 @@
+## [2026-04-21c] — feat: favicon + registro en zya-changelog
+**Cambios:** public/index.html — favicon /logo.png agregado. Registrado en zya-changelog PROYECTOS array.
+**Impacto:** Sitio muestra ícono en pestaña del navegador; CHANGELOG visible en cambios.zyaeti.mx.
+
 ## [2026-04-21b] — docs: AAP aprobada + ESTADO.md actualizado
 **Cambios:** ESTADO.md — historial completo agregado.
 **Impacto:** Proyecto 100% conforme con estándar ZYA (AAP 16/16 ítems).
