@@ -1,3 +1,7 @@
+## [2026-04-21b] — docs: AAP aprobada + ESTADO.md actualizado
+**Cambios:** ESTADO.md — historial completo agregado.
+**Impacto:** Proyecto 100% conforme con estándar ZYA (AAP 16/16 ítems).
+
 ## [2026-04-21] — chore: renombrar botón header a "Portal"
 **Cambios:** public/index.html — "ACCESO OPERADORES" → "PORTAL"
 **Impacto:** Solo visual, sin cambio funcional.
