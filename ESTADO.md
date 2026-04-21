@@ -1,5 +1,5 @@
 # ESTADO.md — sanyos-web
-Última actualización: 2026-04-19
+Última actualización: 2026-04-21
 
 ## Estado actual
 - URL: sanyos.mx / www.sanyos.mx
@@ -17,6 +17,11 @@
 - Túnel Cloudflare configurado ✅
 - PM2 configurado ✅
 - Health endpoint /health ✅
+
+## Historial
+- 2026-04-21: Header renombrado "ACCESO OPERADORES" → "PORTAL". AAP aprobada 16/16 ítems. Alta en landing zyaeti.mx (link sanyos.mx) y en admin (sidebar + monitor + credenciales).
+- 2026-04-20: SEO implementado (robots.txt, sitemap.xml, meta OG/Twitter/Schema.org).
+- 2026-04-19: Creación inicial.
 
 ## Pendientes
 - (ninguno)
