@@ -19,12 +19,12 @@
 - Health endpoint /health ✅
 
 ## Historial
-- 2026-04-21: Header renombrado "ACCESO OPERADORES" → "PORTAL". AAP aprobada 16/16 ítems. Alta en landing zyaeti.mx (link sanyos.mx) y en admin (sidebar + monitor + credenciales).
+- 2026-04-21: Header "ACCESO OPERADORES" → "PORTAL". AAP 16/16. Alta en landing (link), admin (sidebar+domMap+creds) y zya-changelog. Favicon /logo.png agregado.
 - 2026-04-20: SEO implementado (robots.txt, sitemap.xml, meta OG/Twitter/Schema.org).
 - 2026-04-19: Creación inicial.
 
 ## Pendientes
-- (ninguno)
+- Favicon.ico 16/32px dedicado (actualmente usa logo.png de 388px — funcional pero no óptimo)
 
 ## Variables de entorno requeridas
 - Ninguna (sitio estático)
