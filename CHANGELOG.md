@@ -1,3 +1,7 @@
+## [2026-04-21] — chore: renombrar botón header a "Portal"
+**Cambios:** public/index.html — "ACCESO OPERADORES" → "PORTAL"
+**Impacto:** Solo visual, sin cambio funcional.
+
 ## [2026-04-20] — feat: SEO para Google Search Console
 **Cambios:** robots.txt, sitemap.xml, meta tags OG/Twitter/Schema.org
 **Impacto:** Sitio indexable por Google.
