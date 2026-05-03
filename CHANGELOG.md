@@ -1,3 +1,17 @@
+## [2026-05-02] — fix: auditoría S14-C — hardcoding y documentación (Ronda 4)
+**Archivos:** `server.js`, `.env.example`, `README.md`
+**Motivo:** Auditoría S14 fase C — PORT y URL redirect hardcodeados.
+**Cambios:**
+- PORT y OPS_REDIRECT_URL extraídos a env vars con fallback
+- Creado .env.example
+- Creado README.md con instrucciones de arranque
+
+## [2026-04-26] — docs: auditoría S14-A discovery
+**Cambios:** plans/auditoria-S14-A.md creado.
+
+## [2026-04-25] — docs: crear plans/index-planes.md
+**Cambios:** plans/index-planes.md agregado.
+
 ## [2026-04-21c] — feat: favicon + registro en zya-changelog
 **Cambios:** public/index.html — favicon /logo.png agregado. Registrado en zya-changelog PROYECTOS array.
 **Impacto:** Sitio muestra ícono en pestaña del navegador; CHANGELOG visible en cambios.zyaeti.mx.

@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = 3850;
+const PORT = process.env.PORT || 3850;
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'sanyos-web', version: '1.0.0', uptime: Math.floor(process.uptime()), timestamp: new Date().toISOString() });
@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
 app.use((req, res, next) => {
   const host = req.headers.host || '';
   if (host.startsWith('ops.sanyos.mx')) {
-    return res.redirect(301, 'https://ops.zyaeti.mx' + req.url);
+    return res.redirect(301, (process.env.OPS_REDIRECT_URL || 'https://ops.zyaeti.mx') + req.url);
   }
   next();
 });
