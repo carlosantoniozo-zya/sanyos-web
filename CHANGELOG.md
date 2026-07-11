@@ -1,3 +1,9 @@
+## [2026-07-11] — feat: favicon.ico real conforme a estándar ZYA (T199)
+**Archivos:** `public/favicon.ico` (nuevo), `public/index.html`
+**Motivo:** El workaround previo (`<link rel="icon" href="/logo.png">`, S14-A 2026-04-21c) usaba el logo completo (388x435, incluye texto "TRANSPORTES S.O.N.") sin `favicon.ico` dedicado — no conforme al estándar ZYA.
+**Cambio:** Generado `public/favicon.ico` (16/32/48/64px) recortando el monograma "SY" del logo existente (`public/logo.png`, sin modificar el original). Agregado `<link rel="icon" href="/favicon.ico" type="image/x-icon">` antes del link a logo.png (se conserva como fallback).
+**Impacto:** Ninguno funcional. Archivos estáticos servidos por `express.static` — sin rebuild ni restart necesario.
+
 ## [2026-05-02] — fix: auditoría S14-C — hardcoding y documentación (Ronda 4)
 **Archivos:** `server.js`, `.env.example`, `README.md`
 **Motivo:** Auditoría S14 fase C — PORT y URL redirect hardcodeados.
