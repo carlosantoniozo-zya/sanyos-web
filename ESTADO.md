@@ -1,30 +1,41 @@
 # ESTADO.md — sanyos-web
-Última actualización: 2026-04-21
+Última actualización: 2026-07-12
 
-## Estado actual
-- URL: sanyos.mx / www.sanyos.mx
-- Puerto: 3850
-- Stack: Node + Express (estático)
-- Host: PC local, PM2 (sanyos-web)
-- ops.sanyos.mx → redirect 301 → ops.zyaeti.mx
+## Resumen
+Landing pública de SANYOS Transportes · Express 5 (estático) · sanyos.mx / www.sanyos.mx · puerto 3850 · PC local
 
-## Completado
-- Landing estática con logo real (S+Y entrelazadas) ✅
-- Datos de emisores tomados de BD sanyos-ops ✅
-- Correo contacto@sanyos.mx ✅
-- Colores tema Sanyos (#c9a84c, #0f0e0c) ✅
-- DNS Cloudflare (sanyos.mx, www, ops) ✅
-- Túnel Cloudflare configurado ✅
-- PM2 configurado ✅
-- Health endpoint /health ✅
+## Implementado ✅
+- Sitio estático corporativo de SANYOS
+- Redirect 301: ops.sanyos.mx → ops.zyaeti.mx
+- SEO completo (robots.txt, sitemap.xml, meta OG/Twitter/Schema.org)
+- PM2: sanyos-web
+- Health endpoint, no-cache, Monitor, Cloudflare
+- Colores: dorado #c9a84c, fondo #0f0e0c
+- Logo: public/logo.png (S+Y entrelazadas, 388×435px)
+- Favicon.ico real (T199, 2026-07-11) — monograma "SY" recortado del logo, reemplaza el workaround `<link rel="icon" href="/logo.png">`
 
-## Historial
-- 2026-04-21: Header "ACCESO OPERADORES" → "PORTAL". AAP 16/16. Alta en landing (link), admin (sidebar+domMap+creds) y zya-changelog. Favicon /logo.png agregado.
-- 2026-04-20: SEO implementado (robots.txt, sitemap.xml, meta OG/Twitter/Schema.org).
-- 2026-04-19: Creación inicial.
+## Pendientes 🔄
+- Ninguno activo
 
-## Pendientes
-- Favicon.ico 16/32px dedicado (actualmente usa logo.png de 388px — funcional pero no óptimo)
+## Bugs conocidos 🐛
+- Ninguno activo
+
+## Deuda técnica ⚠️
+- Ninguna
+
+## Próximas implementaciones 💡
+- Ninguna planificada
+
+## Decisiones de arquitectura
+- Express estático puro (sin BD, sin React) — landing informativa, sin lógica de negocio
+- Sin ZYA About ni Feedback Widget — sitio de cliente externo, no branding ZYA
+- Redirect ops.sanyos.mx → ops.zyaeti.mx — sanyos-ops tiene dominio zyaeti.mx, no sanyos.mx
+
+## Integraciones
+- **sanyos-ops** (ops.zyaeti.mx) — redirect desde ops.sanyos.mx
+- **ZYA Monitor** — monitoreo HTTP
+- **Cloudflare** — DNS sanyos.mx
 
 ## Variables de entorno requeridas
-- Ninguna (sitio estático)
+- PORT=3850
+- NODE_ENV=production

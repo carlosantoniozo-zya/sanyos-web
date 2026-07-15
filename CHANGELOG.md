@@ -1,3 +1,10 @@
+## [2026-07-12] — docs: auditoría ecosistema F5 — documentación al día
+**Motivo:** Auditoría transversal de documentación de todo el ecosistema (código↔doc↔backlog).
+**Cambios:**
+- `ESTADO.md` — quitado "Favicon ausente" de Pendientes/Deuda técnica/Próximas (ya corregido T199, 2026-07-11). Fecha actualizada a 2026-07-12.
+- `plans/index-planes.md` — S14-A/B agregados a CERRADOS (plan huérfano completado desde 2026-05-02).
+**Impacto:** Solo documentación. Sin cambios de código ni deploy requerido.
+
 ## [2026-07-11] — feat: favicon.ico real conforme a estándar ZYA (T199)
 **Archivos:** `public/favicon.ico` (nuevo), `public/index.html`
 **Motivo:** El workaround previo (`<link rel="icon" href="/logo.png">`, S14-A 2026-04-21c) usaba el logo completo (388x435, incluye texto "TRANSPORTES S.O.N.") sin `favicon.ico` dedicado — no conforme al estándar ZYA.

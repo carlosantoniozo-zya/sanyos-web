@@ -5,7 +5,7 @@
 **Basado en:** `sanyos-web/plans/auditoria-S14-A.md`
 **Hallazgos fase A:** 13 a verificar (❌ 5 · ⚠️ 4 · ❓ 4)
 **Confirmados:** 6 | **Descartados:** 7
-**Estado:** ⏳ PENDIENTE APROBACIÓN CARLOS
+**Estado:** ✅ COMPLETADA 2026-05-02
 
 > **Leyenda:**
 > 🔴 Crítico — seguridad, datos expuestos, service-down
