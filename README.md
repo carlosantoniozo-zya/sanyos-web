@@ -12,8 +12,6 @@ Landing corporativa estática para sanyos.mx — Transportes S.O.N. / SANYOS.
 ```bash
 npm install
 node server.js
-# o vía PM2:
-pm2 start ecosystem.config.js --only sanyos-web
 ```
 
 ## Variables de entorno (opcional)
