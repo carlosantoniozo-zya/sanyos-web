@@ -39,3 +39,7 @@ Landing pública de SANYOS Transportes · Express 5 (estático) · sanyos.mx / w
 ## Variables de entorno requeridas
 - PORT=3850
 - NODE_ENV=production
+
+## Actualización S1543 (2026-09-24) — auditoría documental
+- La auditoría integral S1497 (commit 9578d80, 2026-09-03, `plans/auditoria-integral-2026-09-02.md`) encontró 2 ❌ y 3 ⚠️ que este ESTADO no refleja ("Deuda técnica: Ninguna" es inexacto): faltan headers de seguridad (X-Frame-Options, CSP, HSTS…), no hay formulario de contacto (solo `mailto`), JSON-LD incompleto, `twitter:card` = `summary`.
+- `ops.sanyos.mx` → 301 a `ops.zyaeti.mx` es un redirect intencional servido por este proyecto (puerto 3850).

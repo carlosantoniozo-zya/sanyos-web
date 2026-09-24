@@ -1,3 +1,8 @@
+## [2026-09-24] — docs: ESTADO.md al día con la realidad verificada (S1543)
+**Archivos:** `ESTADO.md`
+**Motivo:** Verificación de documentación vs realidad: ESTADO decía deuda técnica ninguna pese a los hallazgos de la auditoría S1497.
+**Cambio:** solo documentación (sección "Actualización S1543" al final de ESTADO.md). **Impacto:** ninguno en runtime.
+
 ## [2026-07-12] — docs: auditoría ecosistema F5 — documentación al día
 **Motivo:** Auditoría transversal de documentación de todo el ecosistema (código↔doc↔backlog).
 **Cambios:**
