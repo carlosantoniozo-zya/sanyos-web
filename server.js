@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+// ZYA-ASEG-HEADERS (S1683): anti-clickjacking
+app.use((req, res, next) => { res.setHeader('X-Frame-Options', 'SAMEORIGIN'); next(); });
 const PORT = process.env.PORT || 3850;
 
 app.get('/health', (req, res) => {

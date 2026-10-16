@@ -1,3 +1,9 @@
+## [2026-10-16] — security: cabecera anti-clickjacking (S1683)
+**Archivos:** el `server.js` del servicio
+**Motivo:** ASEG: sin `X-Frame-Options` (anti-clickjacking).
+**Cambio:** middleware `X-Frame-Options: SAMEORIGIN` al inicio (marcador `ZYA-ASEG-HEADERS`).
+**Impacto:** la página ya no puede incrustarse desde otros orígenes; sin cambio funcional.
+
 ## [2026-09-24] — docs: ESTADO.md al día con la realidad verificada (S1543)
 **Archivos:** `ESTADO.md`
 **Motivo:** Verificación de documentación vs realidad: ESTADO decía deuda técnica ninguna pese a los hallazgos de la auditoría S1497.
