@@ -41,8 +41,38 @@
     "email": "contacto@sanyos.mx",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Calle Progreso núm. 4, San Lucas el Grande",
+      "addressLocality": "San Salvador el Verde",
+      "addressRegion": "Puebla",
+      "postalCode": "74135",
       "addressCountry": "MX"
     },
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Oficina y domicilio fiscal",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Progreso núm. 4, San Lucas el Grande",
+          "addressLocality": "San Salvador el Verde",
+          "addressRegion": "Puebla",
+          "postalCode": "74135",
+          "addressCountry": "MX"
+        }
+      },
+      {
+        "@type": "Place",
+        "name": "Patio de operaciones",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle del Llano s/n, San Lucas el Grande",
+          "addressLocality": "San Salvador el Verde",
+          "addressRegion": "Puebla",
+          "postalCode": "74135",
+          "addressCountry": "MX"
+        }
+      }
+    ],
     "areaServed": ["Chihuahua", "Sonora", "Nuevo León", "México"]
   }
   </script>
@@ -180,6 +210,37 @@
 
     .contact a:hover { border-color: #c9a84c; }
 
+    .locations {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 36px 0 8px;
+    }
+
+    .location {
+      border-top: 2px solid #c9a84c;
+      padding: 14px 24px 0;
+      min-width: 240px;
+      max-width: 300px;
+      font-family: 'Arial', sans-serif;
+      font-style: normal;
+    }
+
+    .location h3 {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .location p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #666;
+    }
+
     .entities {
       margin-top: 20px;
       font-family: 'Arial', sans-serif;
@@ -236,6 +297,17 @@
         <h3>Clientes industriales</h3>
         <p>Pharma · Agro · Alimentos</p>
       </div>
+    </div>
+
+    <div class="locations">
+      <address class="location">
+        <h3>Oficina y domicilio fiscal</h3>
+        <p>Calle Progreso núm. 4<br />San Lucas el Grande<br />San Salvador el Verde, Puebla<br />C.P. 74135</p>
+      </address>
+      <address class="location">
+        <h3>Patio de operaciones</h3>
+        <p>Calle del Llano s/n<br />San Lucas el Grande<br />San Salvador el Verde, Puebla<br />C.P. 74135</p>
+      </address>
     </div>
 
     <div class="contact">

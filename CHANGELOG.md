@@ -1,3 +1,9 @@
+## [2026-10-17] — feat: direcciones de oficina/domicilio fiscal y patio
+**Archivos:** `public/index.html`
+**Motivo:** Carlos pidió publicar ambas direcciones (datos de Lucia Romero por WhatsApp).
+**Cambio:** bloque visible «Oficina y domicilio fiscal» (Calle Progreso núm. 4) y «Patio de operaciones» (Calle del Llano s/n), ambos San Lucas el Grande, San Salvador el Verde, Puebla, C.P. 74135; JSON-LD con `PostalAddress` completo y `location` de los dos sitios.
+**Impacto:** solo contenido estático; resuelve el hallazgo 3 de la auditoría S1497 (PostalAddress incompleto).
+
 ## [2026-10-16] — security: cabecera anti-clickjacking (S1683)
 **Archivos:** el `server.js` del servicio
 **Motivo:** ASEG: sin `X-Frame-Options` (anti-clickjacking).
