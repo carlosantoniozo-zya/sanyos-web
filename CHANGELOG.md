@@ -1,3 +1,9 @@
+## [2026-10-18] — feat: rediseño con video, galería de flota, formulario de cotización y teléfonos
+**Archivos:** `public/index.html`, `public/media/*` (3 fotos + video comprimido 720p de 8.5 MB + póster), `server.js`, `package.json` (nodemailer), `.env.example`, `.gitignore`
+**Motivo:** Carlos pidió enriquecer la web con las fotos y el video de `docs/` (idea 1, 2, 4 y 5 de la primera ronda).
+**Cambio:** portada con foto de flota y botones Cotizar/WhatsApp; sección de video (`preload="none"`); servicios; galería de flota; formulario → `POST /api/cotizar` (honeypot, tope 5/h por IP, validación, guarda en `data/leads.jsonl` y avisa a `contacto@sanyos.mx` por el Postfix local con el buzón `facturas@sanyos.mx`); teléfonos 248 101 8011 y 222 930 4622 (los del video y las unidades) y botón flotante de WhatsApp; `twitter:card` grande y JSON-LD con teléfonos.
+**Impacto:** el SMTP va por 127.0.0.1:587 (Mailcow local, puertos públicos de correo siguen cerrados). Requiere `.env` en el servicio (no versionado). Sin datos internos de sanyos-ops publicados.
+
 ## [2026-10-17] — feat: direcciones de oficina/domicilio fiscal y patio
 **Archivos:** `public/index.html`
 **Motivo:** Carlos pidió publicar ambas direcciones (datos de Lucia Romero por WhatsApp).

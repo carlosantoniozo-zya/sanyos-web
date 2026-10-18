@@ -9,7 +9,7 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/logo.png" type="image/png" />
   <title>SANYOS — Transportes S.O.N. | Carga Regional y Larga Distancia</title>
-  <meta name="description" content="Empresa de transporte de carga confiable. Distribución local, regional y larga distancia. Chihuahua, Sonora, Nuevo León. Clientes pharma, agro y alimentos." />
+  <meta name="description" content="Empresa de transporte de carga confiable en Puebla. Distribución local, regional y larga distancia. Chihuahua, Sonora, Nuevo León. Clientes pharma, agro y alimentos. Solicita tu cotización." />
   <link rel="canonical" href="https://sanyos.mx/" />
 
   <!-- Open Graph -->
@@ -19,13 +19,13 @@
   <meta property="og:site_name" content="SANYOS" />
   <meta property="og:title" content="SANYOS — Transportes S.O.N. | Carga Regional y Larga Distancia" />
   <meta property="og:description" content="Empresa de transporte de carga confiable. Distribución local, regional y larga distancia. Chihuahua, Sonora, Nuevo León." />
-  <meta property="og:image" content="https://sanyos.mx/logo.png" />
+  <meta property="og:image" content="https://sanyos.mx/media/flota-volvo.jpg" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SANYOS — Transportes S.O.N." />
   <meta name="twitter:description" content="Transporte de carga confiable. Distribución local, regional y larga distancia." />
-  <meta name="twitter:image" content="https://sanyos.mx/logo.png" />
+  <meta name="twitter:image" content="https://sanyos.mx/media/flota-volvo.jpg" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -38,7 +38,9 @@
     "description": "Empresa de transporte de carga. Distribución local, regional y larga distancia.",
     "url": "https://sanyos.mx",
     "logo": "https://sanyos.mx/logo.png",
+    "image": "https://sanyos.mx/media/flota-volvo.jpg",
     "email": "contacto@sanyos.mx",
+    "telephone": ["+52 248 101 8011", "+52 222 930 4622"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle Progreso núm. 4, San Lucas el Grande",
@@ -73,31 +75,50 @@
         }
       }
     ],
-    "areaServed": ["Chihuahua", "Sonora", "Nuevo León", "México"]
+    "areaServed": ["Puebla", "Chihuahua", "Sonora", "Nuevo León", "México"]
   }
   </script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'Georgia', serif;
       background: #fafaf8;
       color: #1a1a1a;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
+
+    a { color: inherit; }
+    .sans { font-family: 'Arial', sans-serif; }
 
     header {
       background: #0f0e0c;
       padding: 12px 32px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    header a {
+    header nav { display: flex; gap: 22px; flex-wrap: wrap; }
+
+    header nav a {
+      color: #d8d2c2;
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    header nav a:hover { color: #c9a84c; }
+
+    .portal {
       color: #c9a84c;
       font-family: 'Arial', sans-serif;
       font-size: 13px;
@@ -107,221 +128,266 @@
       padding: 6px 16px;
       transition: background 0.2s;
     }
+    .portal:hover { background: #c9a84c; color: #0f0e0c; }
 
-    header a:hover { background: #c9a84c; color: #0f0e0c; }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 24px;
+    /* Portada */
+    .hero {
+      background: #0f0e0c url('/media/flota-volvo.jpg') center 70% / cover no-repeat;
+      position: relative;
+      color: #fff;
       text-align: center;
+      padding: 72px 24px 96px;
     }
-
-    .logo {
-      width: 200px;
-      height: auto;
-      margin-bottom: 32px;
+    .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,14,12,.78), rgba(15,14,12,.5) 60%, rgba(15,14,12,.78)); }
+    .hero > * { position: relative; }
+    .logo { width: 150px; height: auto; margin-bottom: 24px; background: #fff; padding: 10px 14px; border-radius: 4px; }
+    .hero h1 { font-size: 13px; font-family: 'Arial', sans-serif; letter-spacing: 0.3em; text-transform: uppercase; color: #d8d2c2; margin-bottom: 12px; }
+    .divider { width: 60px; height: 2px; background: #c9a84c; margin: 0 auto 24px; }
+    .tagline { font-size: 38px; font-weight: normal; letter-spacing: 0.02em; margin-bottom: 10px; }
+    .sub { font-size: 14px; font-family: 'Arial', sans-serif; color: #d8d2c2; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 36px; }
+    .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      font-family: 'Arial', sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; padding: 13px 26px; border: 1px solid #c9a84c; cursor: pointer; display: inline-block;
     }
+    .btn-gold { background: #c9a84c; color: #0f0e0c; font-weight: bold; }
+    .btn-gold:hover { background: #dcc06a; }
+    .btn-line { color: #c9a84c; background: transparent; }
+    .btn-line:hover { background: #c9a84c; color: #0f0e0c; }
 
-    .divider {
-      width: 60px;
-      height: 2px;
-      background: #c9a84c;
-      margin: 0 auto 28px;
-    }
+    section { padding: 64px 24px; }
+    .wrap { max-width: 1040px; margin: 0 auto; }
+    .center { text-align: center; }
+    .eyebrow { font-family: 'Arial', sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #8a6f1f; margin-bottom: 10px; }
+    h2 { font-size: 28px; font-weight: normal; color: #0f0e0c; margin-bottom: 14px; }
+    .lead { font-family: 'Arial', sans-serif; font-size: 15px; line-height: 1.7; color: #555; max-width: 640px; margin: 0 auto 36px; }
 
-    h1 {
-      font-size: 13px;
-      font-family: 'Arial', sans-serif;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: #555;
-      margin-bottom: 12px;
-    }
+    /* Video */
+    .video-box { max-width: 880px; margin: 0 auto; background: #0f0e0c; border-top: 2px solid #c9a84c; }
+    .video-box video { display: block; width: 100%; height: auto; }
 
-    .tagline {
-      font-size: 28px;
-      font-weight: normal;
-      color: #0f0e0c;
-      letter-spacing: 0.02em;
-      margin-bottom: 8px;
-    }
+    /* Servicios */
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .service { background: #fff; border: 1px solid #e8e4dc; padding: 26px 24px; text-align: center; }
+    .service-icon { font-size: 26px; margin-bottom: 10px; }
+    .service h3 { font-size: 12px; font-family: 'Arial', sans-serif; letter-spacing: 0.15em; text-transform: uppercase; color: #333; margin-bottom: 8px; }
+    .service p { font-size: 13px; line-height: 1.6; color: #777; font-family: 'Arial', sans-serif; }
 
-    .sub {
-      font-size: 14px;
-      font-family: 'Arial', sans-serif;
-      color: #888;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 48px;
-    }
+    /* Flota */
+    .band { background: #f1ede3; }
+    .gallery { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: auto auto; gap: 12px; }
+    .gallery figure { position: relative; overflow: hidden; background: #0f0e0c; }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .gallery .g1 { grid-row: span 2; }
+    .gallery figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 14px 10px; font-family: 'Arial', sans-serif; font-size: 12px; letter-spacing: 0.08em; color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.7)); }
+    .points { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin-top: 36px; }
+    .point { border-top: 2px solid #c9a84c; padding-top: 12px; font-family: 'Arial', sans-serif; }
+    .point h3 { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; color: #333; }
+    .point p { font-size: 13px; line-height: 1.6; color: #666; }
 
-    .services {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 52px;
-    }
+    /* Cotización */
+    form { max-width: 720px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; text-align: left; }
+    form .full { grid-column: 1 / -1; }
+    label { display: block; font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 5px; }
+    input, textarea, select { width: 100%; font-family: 'Arial', sans-serif; font-size: 15px; padding: 11px 12px; border: 1px solid #d6d0c2; background: #fff; color: #1a1a1a; }
+    input:focus, textarea:focus, select:focus { outline: 2px solid #c9a84c; outline-offset: 0; }
+    textarea { min-height: 96px; resize: vertical; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    #msg { font-family: 'Arial', sans-serif; font-size: 14px; text-align: center; min-height: 20px; }
+    #msg.ok { color: #2f6b2f; } #msg.err { color: #a33; }
+    form button { border: 1px solid #c9a84c; }
+    form button:disabled { opacity: .6; cursor: wait; }
 
-    .service {
-      background: #fff;
-      border: 1px solid #e8e4dc;
-      padding: 20px 28px;
-      min-width: 180px;
-    }
+    /* Ubicación y contacto */
+    .locations { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; }
+    .location { border-top: 2px solid #c9a84c; padding: 14px 24px 0; min-width: 240px; max-width: 300px; font-family: 'Arial', sans-serif; font-style: normal; text-align: left; }
+    .location h3 { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #333; margin-bottom: 8px; }
+    .location p { font-size: 13px; line-height: 1.6; color: #666; }
+    .contact { display: flex; gap: 12px 34px; justify-content: center; flex-wrap: wrap; font-family: 'Arial', sans-serif; font-size: 15px; }
+    .contact a { color: #8a6f1f; text-decoration: none; border-bottom: 1px solid transparent; letter-spacing: 0.04em; }
+    .contact a:hover { border-color: #8a6f1f; }
 
-    .service-icon {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
+    .entities { margin-top: 26px; font-family: 'Arial', sans-serif; font-size: 11px; color: #aaa; letter-spacing: 0.08em; line-height: 1.8; }
 
-    .service h3 {
-      font-size: 12px;
-      font-family: 'Arial', sans-serif;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #333;
-      margin-bottom: 4px;
-    }
+    footer { background: #0f0e0c; color: #777; text-align: center; padding: 20px; font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.08em; }
 
-    .service p {
-      font-size: 12px;
-      color: #999;
-      font-family: 'Arial', sans-serif;
-    }
+    .wa { position: fixed; right: 18px; bottom: 18px; z-index: 20; background: #25d366; color: #fff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 18px; border-radius: 30px; box-shadow: 0 3px 10px rgba(0,0,0,.3); }
 
-    .contact {
-      margin-top: 8px;
-    }
-
-    .contact a {
-      font-family: 'Arial', sans-serif;
-      font-size: 14px;
-      color: #c9a84c;
-      text-decoration: none;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
-    }
-
-    .contact a:hover { border-color: #c9a84c; }
-
-    .locations {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 36px 0 8px;
-    }
-
-    .location {
-      border-top: 2px solid #c9a84c;
-      padding: 14px 24px 0;
-      min-width: 240px;
-      max-width: 300px;
-      font-family: 'Arial', sans-serif;
-      font-style: normal;
-    }
-
-    .location h3 {
-      font-size: 12px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #333;
-      margin-bottom: 8px;
-    }
-
-    .location p {
-      font-size: 13px;
-      line-height: 1.6;
-      color: #666;
-    }
-
-    .entities {
-      margin-top: 20px;
-      font-family: 'Arial', sans-serif;
-      font-size: 11px;
-      color: #bbb;
-      letter-spacing: 0.08em;
-      line-height: 1.8;
-    }
-
-    footer {
-      background: #0f0e0c;
-      color: #555;
-      text-align: center;
-      padding: 20px;
-      font-family: 'Arial', sans-serif;
-      font-size: 11px;
-      letter-spacing: 0.08em;
-    }
-
-    @media (max-width: 480px) {
-      .tagline { font-size: 22px; }
-      .services { flex-direction: column; align-items: center; }
+    @media (max-width: 720px) {
+      header { padding: 10px 16px; }
+      header nav { display: none; }
+      .tagline { font-size: 26px; }
+      section { padding: 48px 18px; }
+      .gallery { grid-template-columns: 1fr; }
+      .gallery .g1 { grid-row: auto; }
+      form { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="https://ops.sanyos.mx" target="_blank">PORTAL</a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#flota">Flota</a>
+      <a href="#cotizar">Cotizar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="portal" href="https://ops.sanyos.mx" target="_blank" rel="noopener">PORTAL</a>
   </header>
 
-  <main>
+  <div class="hero" id="inicio">
     <img src="/logo.png" alt="SANYOS Logo" class="logo" />
-
     <h1>Transportes S.O.N.</h1>
     <div class="divider"></div>
-
     <p class="tagline">Transporte de carga confiable</p>
     <p class="sub">Distribución local · Regional · Larga distancia</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#cotizar">Solicitar cotización</a>
+      <a class="btn btn-line" href="https://wa.me/522481018011" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
 
-    <div class="services">
-      <div class="service">
-        <div class="service-icon">🚛</div>
-        <h3>Carga general</h3>
-        <p>Distribución regional y local</p>
+  <section id="video">
+    <div class="wrap center">
+      <p class="eyebrow">Conócenos</p>
+      <h2>El camino se hace con experiencia</h2>
+      <p class="lead">Mover lo que importa: una flota versátil y operadores capacitados y responsables en cada envío.</p>
+      <div class="video-box">
+        <video controls preload="none" playsinline poster="/media/sanyos-poster.jpg">
+          <source src="/media/sanyos.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="service">
-        <div class="service-icon">🛣️</div>
-        <h3>Larga distancia</h3>
-        <p>Chihuahua · Sonora · Nuevo León</p>
+    </div>
+  </section>
+
+  <section id="servicios" class="band">
+    <div class="wrap center">
+      <p class="eyebrow">Servicios</p>
+      <h2>Qué movemos y hacia dónde</h2>
+      <p class="lead">Del reparto local a rutas de larga distancia, con la unidad adecuada para cada tipo de carga.</p>
+      <div class="services">
+        <div class="service">
+          <div class="service-icon">🚛</div>
+          <h3>Carga general</h3>
+          <p>Distribución regional y local con tractocamiones, cajas secas y unidades de reparto.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🛣️</div>
+          <h3>Larga distancia</h3>
+          <p>Chihuahua · Sonora · Nuevo León y el resto del país.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">📦</div>
+          <h3>Clientes industriales</h3>
+          <p>Pharma · Agro · Alimentos, con seguimiento de cada viaje.</p>
+        </div>
       </div>
-      <div class="service">
-        <div class="service-icon">📦</div>
-        <h3>Clientes industriales</h3>
-        <p>Pharma · Agro · Alimentos</p>
+    </div>
+  </section>
+
+  <section id="flota">
+    <div class="wrap center">
+      <p class="eyebrow">Nuestra flota</p>
+      <h2>Una flota versátil y eficiente</h2>
+      <p class="lead">Unidades propias que nos permiten adaptarnos a lo que cada envío necesita.</p>
+      <div class="gallery">
+        <figure class="g1"><img src="/media/flota-volvo.jpg" alt="Tractocamión Volvo con caja seca de SANYOS" loading="lazy" /><figcaption>Tractocamión con caja seca</figcaption></figure>
+        <figure><img src="/media/flota-patio.jpg" alt="Cuatro tractocamiones alineados en el patio de SANYOS" loading="lazy" /><figcaption>Nuestras unidades en patio</figcaption></figure>
+        <figure><img src="/media/flota-freightliner.jpg" alt="Tractocamión Freightliner Cascadia de Trans Logistic SANYOS" loading="lazy" /><figcaption>Trans Logistic SANYOS</figcaption></figure>
+      </div>
+      <div class="points">
+        <div class="point"><h3>Operadores capacitados</h3><p>Personal con experiencia y responsable de cada envío.</p></div>
+        <div class="point"><h3>Seguimiento del viaje</h3><p>Control de cada ruta desde nuestro portal operativo.</p></div>
+        <div class="point"><h3>Documentación en regla</h3><p>Facturación y Carta Porte para cada servicio.</p></div>
       </div>
     </div>
+  </section>
 
-    <div class="locations">
-      <address class="location">
-        <h3>Oficina y domicilio fiscal</h3>
-        <p>Calle Progreso núm. 4<br />San Lucas el Grande<br />San Salvador el Verde, Puebla<br />C.P. 74135</p>
-      </address>
-      <address class="location">
-        <h3>Patio de operaciones</h3>
-        <p>Calle del Llano s/n<br />San Lucas el Grande<br />San Salvador el Verde, Puebla<br />C.P. 74135</p>
-      </address>
+  <section id="cotizar" class="band">
+    <div class="wrap center">
+      <p class="eyebrow">Cotización</p>
+      <h2>Cuéntanos qué necesitas mover</h2>
+      <p class="lead">Déjanos los datos del envío y te respondemos con una cotización.</p>
+      <form id="cot" novalidate>
+        <div><label for="nombre">Nombre *</label><input id="nombre" name="nombre" maxlength="100" required autocomplete="name" /></div>
+        <div><label for="empresa">Empresa</label><input id="empresa" name="empresa" maxlength="120" autocomplete="organization" /></div>
+        <div><label for="correo">Correo *</label><input id="correo" name="correo" type="email" maxlength="150" required autocomplete="email" /></div>
+        <div><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" maxlength="30" autocomplete="tel" /></div>
+        <div><label for="origen">Origen</label><input id="origen" name="origen" maxlength="100" placeholder="Ciudad o estado" /></div>
+        <div><label for="destino">Destino</label><input id="destino" name="destino" maxlength="100" placeholder="Ciudad o estado" /></div>
+        <div class="full"><label for="carga">Tipo de carga</label>
+          <select id="carga" name="carga">
+            <option value="">Selecciona…</option>
+            <option>Carga general</option>
+            <option>Pharma</option>
+            <option>Agro</option>
+            <option>Alimentos</option>
+            <option>Otra</option>
+          </select>
+        </div>
+        <div class="full"><label for="mensaje">Detalles del envío</label><textarea id="mensaje" name="mensaje" maxlength="1500" placeholder="Peso aproximado, fechas, requerimientos especiales…"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="website">No llenar</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+        <div class="full center"><button class="btn btn-gold" type="submit">Enviar solicitud</button></div>
+        <p id="msg" class="full" role="status"></p>
+      </form>
     </div>
+  </section>
 
-    <div class="contact">
-      <a href="mailto:contacto@sanyos.mx">contacto@sanyos.mx</a>
+  <section id="contacto">
+    <div class="wrap center">
+      <p class="eyebrow">Contacto</p>
+      <h2>Dónde encontrarnos</h2>
+      <p class="lead">Base de operaciones en San Salvador el Verde, Puebla.</p>
+      <div class="locations">
+        <address class="location">
+          <h3>Oficina y domicilio fiscal</h3>
+          <p>Calle Progreso núm. 4<br />San Lucas el Grande<br />San Salvador el Verde, Puebla<br />C.P. 74135</p>
+        </address>
+        <address class="location">
+          <h3>Patio de operaciones</h3>
+          <p>Calle del Llano s/n<br />San Lucas el Grande<br />San Salvador el Verde, Puebla<br />C.P. 74135</p>
+        </address>
+      </div>
+      <div class="contact">
+        <a href="tel:+522481018011">248 101 8011</a>
+        <a href="tel:+522229304622">222 930 4622</a>
+        <a href="https://wa.me/522481018011" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:contacto@sanyos.mx">contacto@sanyos.mx</a>
+      </div>
+      <div class="entities">SANTIAGO OROPEZA NAVA &nbsp;·&nbsp; TRANS LOGISTIC SANYOS SA DE CV</div>
     </div>
+  </section>
 
-    <div class="entities">
-      SANTIAGO OROPEZA NAVA &nbsp;·&nbsp; TRANS LOGISTIC SANYOS SA DE CV
-    </div>
-  </main>
+  <a class="wa" href="https://wa.me/522481018011" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">WhatsApp</a>
 
   <footer>
     &copy; 2026 TRANSPORTES S.O.N. — TODOS LOS DERECHOS RESERVADOS
   </footer>
+
+  <script>
+    (function () {
+      var f = document.getElementById('cot'), msg = document.getElementById('msg');
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        msg.className = ''; msg.textContent = '';
+        var d = {}; new FormData(f).forEach(function (v, k) { d[k] = v; });
+        if (!d.nombre.trim() || !/^\S+@\S+\.\S{2,}$/.test(d.correo.trim())) {
+          msg.className = 'err'; msg.textContent = 'Escribe tu nombre y un correo válido.'; return;
+        }
+        var b = f.querySelector('button'); b.disabled = true;
+        fetch('/api/cotizar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) })
+          .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+          .then(function (x) {
+            if (x.ok) { f.reset(); msg.className = 'ok'; msg.textContent = 'Gracias, recibimos tu solicitud. Te contactaremos pronto.'; }
+            else { msg.className = 'err'; msg.textContent = x.j.error || 'No se pudo enviar. Escríbenos por WhatsApp.'; }
+          })
+          .catch(function () { msg.className = 'err'; msg.textContent = 'No se pudo enviar. Escríbenos por WhatsApp.'; })
+          .then(function () { b.disabled = false; });
+      });
+    })();
+  </script>
 
 </body>
 </html>
