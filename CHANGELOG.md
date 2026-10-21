@@ -69,3 +69,8 @@
 **Motivo:** Portada corporativa para sanyos.mx — dominio adquirido para correo y presencia web de Transportes S.O.N.
 **Cambios:** server.js, public/index.html, public/logo.png — servidor Express con landing estática.
 **Impacto:** Proyecto nuevo, sin retrocompatibilidad.
+
+## [2026-10-21] — Dependencias: npm audit fix (S1703)
+**Motivo:** auditoría de dependencias de todo el ecosistema (74 de 81 proyectos tenían hallazgos).
+**Cambios:** `npm audit fix` sin --force en sanyos-web (crítica/alta/moderada/baja antes → después: sanyos-web: 1/0/1/1 → 0/0/0/0). Respaldo previo de package.json y package-lock en backups_zya/ronda2-20261021/deps. Frontends reconstruidos y servicios reiniciados con verificación de /health.
+**Impacto:** Solo versiones de dependencias dentro de su rango; sin cambios de código.
