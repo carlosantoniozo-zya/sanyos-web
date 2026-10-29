@@ -1,3 +1,9 @@
+## [2026-10-29] — docs: material de referencia (fotos y video 16-oct)
+**Archivos:** docs/ (fotos y video del 16-oct)
+**Motivo:** ponerse al día tras reinicio (S1758): material de referencia sin commit
+**Cambio:** solo se versionan archivos que ya estaban en disco; sin cambios de lógica.
+**Impacto:** ninguno en producción.
+
 ## [2026-10-18] — feat: rediseño con video, galería de flota, formulario de cotización y teléfonos
 **Archivos:** `public/index.html`, `public/media/*` (3 fotos + video comprimido 720p de 8.5 MB + póster), `server.js`, `package.json` (nodemailer), `.env.example`, `.gitignore`
 **Motivo:** Carlos pidió enriquecer la web con las fotos y el video de `docs/` (idea 1, 2, 4 y 5 de la primera ronda).
